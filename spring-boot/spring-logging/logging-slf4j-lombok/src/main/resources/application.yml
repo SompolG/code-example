@@ -1,0 +1,14 @@
+spring:
+  devtools:
+    livereload:
+      enabled: false
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+  level:
+    org.springframework: ERROR
+    com.demo: DEBUG
+  file: 
+    name: logs/app-yaml.log
