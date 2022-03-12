@@ -1,0 +1,28 @@
+logging:
+  level:
+    org.springframework: ERROR
+    com.demo: INFO
+
+spring:
+  profiles:
+    active: dev
+
+port: 8080
+email: demo@localhost.com
+thread-pool: 10
+
+website:
+  pages:
+    - name: Google
+      url: www.google.com
+    - name: Spring Boot
+      url: https://spring.io/
+    - name: Stack Overflow
+      url: https://stackoverflow.com/
+  servers:
+    - ip: 127.0.0.1
+      path: /dev1
+    - ip: 127.0.0.2
+      path: /dev2
+    - ip: 127.0.0.3
+      path: /dev3
